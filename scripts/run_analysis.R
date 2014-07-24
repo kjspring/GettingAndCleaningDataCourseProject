@@ -58,5 +58,5 @@ tidyDat_meanSD <- subLabels(meanSDdat, activityLabels)
 if(!file.exists("data/tidy")) {
   dir.create("data/tidy")
 }
-write.csv(tidyDat, "data/tidy/allDat.csv")
-write.csv(tidyDat_meanSD, "data/tidy/meanDat.csv")
+write.csv(tidyDat, "data/tidy/allDat.csv", row.names=F)
+write.csv(tidyDat_meanSD, "data/tidy/meanDat.csv", row.names=F)
