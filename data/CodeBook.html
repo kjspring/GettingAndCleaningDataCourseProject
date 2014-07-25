@@ -53,84 +53,54 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
 
 
-<div id="tidy-data-creation-of-human-activity-recognition-using-smartphones-data-set-code-book" class="section level1">
-<h1>Tidy Data Creation of Human Activity Recognition Using Smartphones Data Set Code Book</h1>
+<div id="code-book-tidy-data-creation-of-human-activity-recognition-using-smartphones-data-set" class="section level2">
+<h2># Code Book Tidy Data Creation of Human Activity Recognition Using Smartphones Data Set</h2>
 <p>The purpose of this data analysis is to take the raw data from the Human Activity Recognition Using Smartphones Data Set and turn it into a usable tidy data set.</p>
-<div id="requirements" class="section level2">
-<h2>Requirements</h2>
+</div>
+<div id="variable-names" class="section level2">
+<h2>Variable Names</h2>
+<p>The variables from this database come from the accelerometer and gyroscope 3-axial raw signals</p>
+<div id="subject" class="section level4">
+<h4>Subject</h4>
+</div>
+<div id="time-domain-signals" class="section level4">
+<h4>Time domain signals</h4>
+<p>Captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. The acceleration signal was then separated into body and gravity acceleration signals using another low pass Butterworth filter with a corner frequency of 0.3 Hz.</p>
 <ul>
-<li>Linux or Apple OSX</li>
-<li>R version 3.0.2 for Linux or R version 3.1.1 for OSX</li>
+<li>tBodyAcc-XYZ</li>
+<li>tGravityAcc-XYZ</li>
+<li>tBodyAccJerk-XYZ</li>
+<li>tBodyGyro-XYZ</li>
+<li>tBodyGyroJerk-XYZ : Jerk signals from the the body linear acceleration and angular velocity</li>
+<li>tBodyAccMag</li>
+<li>tGravityAccMag</li>
+<li>tBodyAccJerkMag :</li>
+<li>tBodyGyroMag</li>
+<li>tBodyGyroJerkMag :</li>
 </ul>
 </div>
-<div id="important-files" class="section level2">
-<h2>Important Files</h2>
-<div id="analysis-files" class="section level3">
-<h3>Analysis files</h3>
+<div id="fast-fourier-transform-fft-applied-to-signals" class="section level4">
+<h4>Fast Fourier Transform (FFT) applied to signals</h4>
 <ul>
-<li>README.md</li>
-<li>run_analysis.R</li>
-<li>data/CodeBook.md</li>
+<li>fBodyAcc-XYZ</li>
+<li>fBodyAccJerk-XYZ :</li>
+<li>fBodyGyro-XYZ</li>
+<li>fBodyAccMag</li>
+<li>fBodyAccJerkMag :</li>
+<li>fBodyGyroMag</li>
+<li>fBodyGyroJerkMag :</li>
 </ul>
 </div>
-<div id="raw-data-files" class="section level3">
-<h3>Raw data files</h3>
+<div id="activity-labels" class="section level4">
+<h4>Activity labels</h4>
 <ul>
-<li>data/raw/README.txt : contains infromation about the raw data set</li>
-<li>data/raw/activity_labels.txt : Links the class labels with their activity name</li>
-<li>data/raw/features.txt : List of all features</li>
-<li><p>data/raw/features_info.txt : Shows information about the variables used on the feature vector</p></li>
-<li>data/raw/test/subject_test.txt : Each row identifies the subject who performed the activity for the test data set</li>
-<li>data/raw/test/X_test.txt : Test set</li>
-<li>data/raw/test/y_test.txt : Test labels</li>
-<li>data/raw/train/subject_train.txt : Each row identifies the subject who performed the activity for the training data set</li>
-<li>data/raw/train/X_train.txt - Training set</li>
-<li><p>data/raw/train/y_train.txt : Training labels</p></li>
+<li>WALKING</li>
+<li>WALKING_UPSTAIRS</li>
+<li>WALKING_DOWNSTAIRS</li>
+<li>SITTING</li>
+<li>STANDING</li>
+<li>LAYING -END OF FILE-</li>
 </ul>
-</div>
-<div id="output-tidy-data-files" class="section level3">
-<h3>Output / Tidy Data files</h3>
-<ul>
-<li>data/tidy/allDat.csv : aggregation of test and training data to conform to tidy data standards</li>
-<li>data/tidy/meanDat.csv : subset of allDat.csv file containing only the mean and standard deviation data</li>
-</ul>
-</div>
-</div>
-<div id="user-steps" class="section level2">
-<h2>User Steps</h2>
-<ol style="list-style-type: decimal">
-<li>Copy the data and script from Github (<a href="https://github.com/kjspring/GettingAndCleaningDataCourseProject">https://github.com/kjspring/GettingAndCleaningDataCourseProject</a>)</li>
-<li>Open R or RStudio</li>
-<li>Change the working directory to the directory that contains the run_analysis.R script</li>
-<li>Run the run_analysis.R script in R or RStudio.</li>
-<li>Check that the two output csv files are in the data/tidydata folder named allDat.csv and meanDat.csv, for which they contain all the data and only the mean and standard deviation data, respectively.</li>
-</ol>
-</div>
-<div id="data-analysis-steps" class="section level2">
-<h2>Data Analysis Steps</h2>
-<p>The file run_analysis.R completes all the data manimpulation and analysis steps.</p>
-<div id="steps" class="section level3">
-<h3>Steps</h3>
-<ol style="list-style-type: decimal">
-<li>Load the following into R:</li>
-</ol>
-<ul>
-<li>data/raw/train/subject_train.txt</li>
-<li>data/raw/train/X_train.txt</li>
-<li>data/raw/train/y_train.txt</li>
-</ul>
-<ol start="2" style="list-style-type: decimal">
-<li>Merge all the training data into one datatable</li>
-<li>Load the following into R:</li>
-</ol>
-<ul>
-<li>data/raw/test/subject_test.txt</li>
-<li>data/raw/test/X_test.txt</li>
-<li>data/raw/test/y_test.txt Directions:</li>
-</ul>
-<p>Describes the variables, the data, and any transformations or work that you performed to clean up the data.</p>
-<p>The</p>
-</div>
 </div>
 </div>
 

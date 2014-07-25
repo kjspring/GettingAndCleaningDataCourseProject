@@ -31,7 +31,7 @@ colnames(combinedDat) <- c("subject", "activity", features[,2])
 
 # Extracts only the measurements on the mean and standard
 # deviation for each measurement
-meanSDcol <- grep("[sS]td|[mM]ean", names(combinedDat))
+meanSDcol <- grep("*-mean()|-std()*", names(combinedDat))
 
 # Store only the mean and standard deviation values in a new data frame
 meanSDdat <- subset(combinedDat, select = c(1, 2, meanSDcol))
