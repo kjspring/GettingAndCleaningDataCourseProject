@@ -1,11 +1,15 @@
---
+--------------------------------------------------------------------
+
 Title: README: Tidy Data Maker
+
 Author: Kevin Spring
+
 Date: 23 July 2014
---
+
+--------------------------------------------------------------------
 
 ## Table of Contents
-* Purpose
+* Purpose & Strategy
 * Requirements
 * Files and Structure
 * What is Tidy Data?
@@ -57,12 +61,15 @@ Tidy data consits of 4 essential parts:
 3. Codebook
 4. Recipe of the exact steps.
 
-
 ## Raw data
 
 The raw data comes from the Human Activity Recognition Using Smartphones Data Set located at:
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+Zipped file of the raw data can be found in data/raw/getdata_projectfiles_UCI HAR Dataset.zip or downloaded at:
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 ## Codebook
 
