@@ -37,7 +37,6 @@ meanSDcol <- grep("[sS]td|[mM]ean", names(combinedDat))
 meanSDdat <- subset(combinedDat, select = c(1, 2, meanSDcol))
 
 # Exchange the activity code for actual descriptive variables
-
 # loads the activity code map
 activityLabels <- read.table("data/raw/activity_labels.txt", 
                              stringsAsFactors=F) 
