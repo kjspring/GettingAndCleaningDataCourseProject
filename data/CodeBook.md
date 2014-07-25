@@ -1,9 +1,14 @@
+----------------------------------------------------------------------------
 
 Title: Code Book for Tidy Data Creation of Human Activity Recognition Using Smartphones Data Set 
+
+Filename: CodeBook.md
 
 Author: Kevin Spring
 
 Date: 23 July 2014
+
+-----------------------------------------------------------------------------
 
 The purpose of this data analysis is to take the raw data from the Human Activity Recognition Using Smartphones Data Set and turn it into a usable tidy data set.
 

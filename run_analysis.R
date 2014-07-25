@@ -1,5 +1,5 @@
-# Title: Tidy Data Maker for Human Activity Recognition Using Smartphones Data 
-# Set 
+# Title: Tidy Data Maker for Human Activity Recognition Using Smartphones Data Set
+# Filename: run_analysis.R
 # Author: Kevin Spring
 # Date: 23 July 2014
 # https://class.coursera.org/getdata-005

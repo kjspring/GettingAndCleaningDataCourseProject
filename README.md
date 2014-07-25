@@ -2,6 +2,8 @@
 
 Title: README: Tidy Data Maker
 
+Filename: README.md
+
 Author: Kevin Spring
 
 Date: 23 July 2014
