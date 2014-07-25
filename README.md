@@ -41,7 +41,6 @@ The purpose is to take a raw data set and create a tidy data set along with the 
 * data/raw/activity_labels.txt : Links the class labels with their activity name
 * data/raw/features.txt : List of all features
 * data/raw/features_info.txt : Shows information about the variables used on the feature vector
-
 * data/raw/test/subject_test.txt : Each row identifies the subject who performed the activity for the test data set
 * data/raw/test/X_test.txt : Test set
 * data/raw/test/y_test.txt : Test labels
@@ -75,7 +74,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ## Codebook
 
-The codebook is located in data/CodeBook.md and contains the file structure 
+The codebook is located in data/CodeBook.md and contains the file structure.
 
 ## Data Analysis steps
 
