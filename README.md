@@ -4,13 +4,6 @@
 # Date: 23 July 2014
 --
 
-listing all the related files, 
-instructions on how to use the script, 
-a general description of the raw data and it's source, 
-a description of what the script will do
-
-"make it easy to let your peers give you marks" so just make it clear what your strategy was in the ReadMe.
-
 ## Table of Contents
 * Purpose
 * Requirements
@@ -29,7 +22,6 @@ The purpose is to take a raw data set and create a tidy data set along with the 
 * R version 3.0.2 for Linux or R version 3.1.1 for OSX
 
 ## Files and file structure
-
 
 ### Analysis files
 
