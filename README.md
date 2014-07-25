@@ -1,7 +1,7 @@
 --
-# README: Tidy Data Maker
-# Author: Kevin Spring
-# Date: 23 July 2014
+Title: README: Tidy Data Maker
+Author: Kevin Spring
+Date: 23 July 2014
 --
 
 ## Table of Contents
